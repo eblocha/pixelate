@@ -8,6 +8,8 @@ Into text in your terminal like this:
 
 ![Python Logo](images/py-pixelated.png)
 
+I believe this only works if your terminal supports TrueColor (24-bit).
+
 ## Usage
 
 Clone this repository and set up your virtual environment
