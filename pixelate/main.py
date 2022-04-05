@@ -6,7 +6,9 @@ from .types import ResizeType
 def pixel(color):
     r, g, b, a = color
     if a < (255 // 10):
+        # If alpha is below 10%, show nothing
         return "  "
+    # If alpha is below 50%, set the color as "dim"
     return click.style("  ", bg=(r, g, b), dim=a < 128)
 
 
