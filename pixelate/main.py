@@ -9,7 +9,7 @@ def pixel(color):
         # If alpha is below 10%, show nothing
         return "  "
     # If alpha is below 50%, set the color as "dim"
-    return click.style("  ", bg=(r, g, b), dim=a < 128)
+    return click.style("██", fg=(r, g, b), dim=a < 128)
 
 
 def get_resampling_id(resampling: str):
